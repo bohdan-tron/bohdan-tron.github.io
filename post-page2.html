@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="ua">
+  <head>
+  <style>html { opacity: 0; }</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Публікація</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240613184355">
+
+  <script defer="defer" src="js/main.min.js?_v=20240613184355"></script>
+</head>
+
+
+  <body>
+    
+    <header class="header">
+  <div class="title-tape title-tape--head">
+    <div class="signal-tape" data-tape-text="Ukraine"></div>
+    <div class="signal-tape" data-tape-text="Berdyansk Mariupol Luhansk Melitopol Donetsk Crimea"></div>
+  </div>
+
+  <div class="container">
+    <div class="header__row">
+      <input type="checkbox" id="mobile-menu">
+<label class="menu-hamburger" for="mobile-menu">
+  <span class="menu-hamburger__line"></span>
+</label>
+
+<div class="mobile-menu">
+  <div class="wrapper">
+    <form class="mobile-search-bar" action="/search.html" method="get" aria-label="search bar form">
+  <label for="search" hidden="hidden">Пошук</label>
+  <input type="text" name="search" id="search" placeholder="Пошук" aria-label="search bar input" required>
+
+  <button type="submit" class="mobile-search-bar__submit" aria-label="search bar submit button">
+    <span class="icon icon-search"></span>
+  </button>
+</form>
+    <nav class="mobile-navigation">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="./news.html" class="menu__link" title="Перейти до розділу Новини">
+            Новини
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="./exclusive.html" class="menu__link" title="Перейти до розділу Ексклюзив">
+            Ексклюзив
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="./reportages.html" class="menu__link" title="Перейти до розділу Репортажі">
+            Репортажі
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="./analytics.html" class="menu__link" title="Перейти до розділу Аналітика">
+            Аналітика
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="./blog.html" class="menu__link" title="Перейти до розділу Блог">
+            Блог
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="./investigations.html" class="menu__link" title="Перейти до розділу Розслідування">
+            Розслідування
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="./russian-propaganda.html" class="menu__link" title="Перейти до розділу Російська пропаганда">
+            Російська пропаганда
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="./about-us.html" class="menu__link" title="Перейти до сторінки Про нас">
+            Про нас
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="mobile-menu__footer">
+      
+      <ul class="social-media-list">
+        <li class="social-media-list__item">
+          <a class="social-media-list__link" href="#" title="Facebook" target="_blank">
+            <span class="icon icon-facebook"></span>
+          </a>
+        </li>
+        <li class="social-media-list__item">
+          <a class="social-media-list__link" href="#" title="Telegram" target="_blank">
+            <span class="icon icon-telegram"></span>
+          </a>
+        </li>
+        <li class="social-media-list__item">
+          <a class="social-media-list__link" href="#" title="twitter" target="_blank">
+            <span class="icon icon-twitter"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+      <div class="header__search">
+        <form class="search-bar" action="/search.html" method="get">
+    <button type="button" class="search-bar__btn-open">
+        <span class="icon icon-search">
+        </span>
+    </button>
+
+    <div class="search-bar__input">
+        <button type="submit" class="search-bar__input__submit">
+            <span class="icon icon-search">
+            </span>
+        </button>
+        <label for="search" hidden="hidden">Пошук</label>
+        <input type="text" name="search" id="search" placeholder="Пошук" required>
+        <button type="button" class="search-bar__btn-close">
+            &#x2715;
+        </button>
+    </div>
+</form>
+      </div>
+
+      <a href="/" class="logo header__logo" title="Перейти на головну">
+        <img src="./images/logo.svg" alt="Вільне Радіо лого">
+      </a>
+
+      <div class="header__buttons">
+
+        <div class="header__language" aria-label="Перемикач мови веб сторінки">
+          <a href="#" title="Поточна мова вебсайту: Ukr" class="header__language__link header__language__link--current">
+            Ukr
+          </a>
+
+          <a href="#" title="Click here to change language of the website to english" class="header__language__link">Eng</a>
+        </div>
+
+        <a href="#" title="Підтримати occupied.ua" target="_blank" rel="noopener noreferrer nofollow" class="button button--donation">
+          <span class="icon icon-donation"></span> 
+          
+          <span class="text">
+            Підтримати
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="header__row header__row--nav">
+
+      <nav class="main-navigation">
+  <ul class="menu__list">
+    <li class="menu__item current-menu-item">
+      <a href="/" class="menu__link" title="Перейти до головної сторінки">
+        Головна
+      </a>
+    </li>
+    <li class="menu__item">
+      <a href="./news.html" class="menu__link" title="Перейти до розділу Новини">
+        Новини
+      </a>
+    </li>
+    <li class="menu__item">
+      <a href="./exclusive.html" class="menu__link" title="Перейти до розділу Ексклюзив">
+        Ексклюзив
+      </a>
+    </li>
+    <li class="menu__item">
+      <a href="./reportages.html" class="menu__link" title="Перейти до розділу Репортажі">
+        Репортажі
+      </a>
+    </li>
+    <li class="menu__item">
+      <a href="./analytics.html" class="menu__link" title="Перейти до розділу Аналітика">
+        Аналітика
+      </a>
+    </li>
+    <li class="menu__item">
+      <a href="./blog.html" class="menu__link" title="Перейти до розділу Блог">
+        Блог
+      </a>
+    </li>
+    <li class="menu__item">
+      <a href="./investigations.html" class="menu__link" title="Перейти до розділу Розслідування">
+        Розслідування
+      </a>
+    </li>
+    <li class="menu__item">
+      <a href="./russian-propaganda.html" class="menu__link" title="Перейти до розділу Російська пропаганда">
+        Російська пропаганда
+      </a>
+    </li>
+    <li class="menu__item">
+      <a href="./about-us.html" class="menu__link" title="Перейти до сторінки Про нас">
+        Про нас
+      </a>
+    </li>
+
+    
+  </ul>
+</nav>
+      
+    </div>
+  </div>
+</header>
+
+    <main class="page">
+      <div data-observ></div>
+
+      <div class="container">
+        <div class="breadcrumbs">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="/index.html" class="breadcrumbs__link" title="Перейти на сторінку: Головна">
+                  Головна
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="/news.html" class="breadcrumbs__link" title="Перейти на сторінку: Новини">
+                  Новини
+                </a>
+              </li>
+  
+              <li class="breadcrumbs__item breadcrumbs__item--active" aria-current="page">
+                Донецька ОВА запустила бота в телеграмі для ветеранів
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <section class="post">
+
+        <div class="container post--container">
+          <div class="post__result">
+            <div class="post__hat">
+              <header class="page__header">
+                <h1 class="page__heading">
+                  Донецька ОВА запустила бота в телеграмі для ветеранів
+                </h1>
+
+                <div class="timestamps">
+                  <time datetime="14.02.2024 14:30">
+                    <span class="timestamps__date">14.02.2024</span>
+                    <span class="timestamps__time">14:30</span>
+                  </time>
+
+                  <a class="authors-name" href="/author.html" class="authors-link" title="Перейти на сторінку автора">
+                    Любомир Коновал
+                  </a>
+
+                  <a class="authors-media" href="#" class="authors-link" title="Перейти на сторінку автора" target="_blank">
+                    (Укрінформ)
+                  </a>
+
+                  <div class="tags">  
+                    <span class="icon icon-tag icon-video" title="article contains video"></span>
+
+                    <span class="icon icon-tag icon-photo" title="article is based on photo"></span>
+
+                    <span class="tag" data-tag="yellow">терміново</span>
+                  </div>
+
+                  <ul class="social-media-list">
+                    <li class="social-media-list__item">
+                      <a class="social-media-list__link" href="#" title="Facebook" target="_blank">
+                        <span class="icon icon-facebook"></span>
+                      </a>
+                    </li>
+                    <li class="social-media-list__item">
+                      <a class="social-media-list__link" href="#" title="Telegram" target="_blank">
+                        <span class="icon icon-telegram"></span>
+                      </a>
+                    </li>
+                    <li class="social-media-list__item">
+                      <a class="social-media-list__link" href="#" title="twitter" target="_blank">
+                        <span class="icon icon-twitter"></span>
+                      </a>
+                    </li>
+                    <li class="social-media-list__item">
+                      <a class="social-media-list__link" href="#" title="copy" target="_blank">
+                        <span class="icon icon-copy"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </header>
+            </div>
+
+            <div class="post__content">
+              
+              <p>
+                Бот “Захисники Донеччини” містить посилання на важливу інформацію стосовно гарантій, наданих державою захисникам України та членам їхніх родин.
+              </p>
+              
+              <p class="read-more">
+                  Читайте також: <a href="/post-page.html" title="Link title" target="_blank">Донецька ОВА запустила бота в телеграмі для ветеранів, військових та членів їхніх родин</a>
+              </p>
+              
+              <h2>Хто має право на пільги?</h2>
+              
+              <p>
+                Житло надаватимуть літнім людям, тим хто опинився у скрутній ситуації, людям з інвалідністю та іншим соціально незахищеним переселенцям з Бахмутської громади. Це житло не буде власністю переселенців, його надаватимуть в тимчасове користування. Так робить центр “ЯМаріуполь”.
+              </p>
+              
+              <blockquote>
+                <p>
+                  
+                  “Це у Дніпропетровській, Вінницькій, Житомирській, Одеській, Київській та Черкаській областях. Найбільше переселенців (з Бахмутської громади, — ред.) у Дніпропетровській області — майже 10 тисяч”
+                </p>
+
+                <footer>
+                  Очільник ВА
+                </footer>
+              </blockquote>
+
+              <h2>
+                Які документи необхідні, щоб стати на квартирний облік 
+              </h2>
+
+              <ul>
+                <li>
+                  Копія паспорта заявника та всіх членів сім’ї;
+                </li>
+                <li>
+                  Копія реєстраційного номера облікової картки платника податків на заявника і всіх членів сім’ї;
+                </li>
+                <li>
+                  Довідка з місця роботи / навчання заявника та повнолітніх членів сім’ї;
+                </li>
+                <li>
+                  Копія пенсійного посвідчення (за наявності).
+                </li>
+              </ul>
+              
+              <p>
+                Тиждень тому, вихідними, було два прильоти КАБ-500, це авіаційна бомба пів тонни, яка за своєю потужністю удвічі більша за С-300 і завдає дуже значної шкоди. Влучили в центрі міста, фактично житлові райони, про жодну військову інфраструктуру не йдеться, там немає цього і ніколи не було. Це терор мирного населення, знищення мирного населення, критичної інфраструктури, яка дозволяє цивільному населенню жити, особливо взимку. Це тероризм.
+              </p>
+
+              <ol>
+                <li>
+                  Тиждень тому, вихідними, було два прильоти КАБ-500 (<a href="https://tabloid.pravda.com.ua/" target="_blank" title="title">tabloid.pravda.com.ua</a>)
+                </li>
+
+                <li>
+                  Влучили в центрі міста, фактично житлові райони, про жодну військову інфраструктуру не йдеться, там немає цього і ніколи не було. 
+                </li>
+
+                <li>
+                  Це терор мирного населення, знищення мирного населення, критичної інфраструктури, яка дозволяє цивільному населенню жити, особливо взимку. 
+                </li>
+
+                <li>
+                  Це тероризм.
+                </li>
+              </ol>
+
+              <figure data-type="popup-9">
+                <picture>
+                  <img src="./images/placeholders/nocorner-article-photo.jpg" alt="Alt text">
+                </picture>
+
+                <figcaption>
+                  Ілюстраційне фото SKYRANGER R70, скріншот з відео
+                </figcaption>
+                
+                <div class="popup popup--figure" data-popup="popup-9" data-close-overlay>
+                  <div class="popup__wrapper" data-close-overlay>
+                    <div class="popup__content">
+                      <button class="button-close popup__close" type="button">x</button>
+                      <div class="popup__body">
+                        <figure>
+                          <picture>
+                            <img src="./images/placeholders/nocorner-article-photo.jpg" alt="Post image">
+                          </picture>
+                          
+                          <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+
+              <p>
+                Тиждень тому, вихідними, було два прильоти КАБ-500, це авіаційна бомба пів тонни, яка за своєю потужністю удвічі більша за С-300 і завдає дуже значної шкоди. Влучили в центрі міста, фактично житлові райони, про жодну військову інфраструктуру не йдеться, там немає цього і ніколи не було. Це терор мирного населення, знищення мирного населення, критичної інфраструктури, яка дозволяє цивільному населенню жити, особливо взимку. Це тероризм.
+              </p>
+              
+              <figure data-type="popup-10">
+                <picture>
+                  <img src="./images/placeholders/700width_angled_image.jpg" alt="Alt text">
+                </picture>
+
+                <figcaption>
+                  Ілюстраційне фото SKYRANGER R70, скріншот з відео
+                </figcaption>
+                
+                <div class="popup popup--figure" data-popup="popup-10" data-close-overlay>
+                  <div class="popup__wrapper" data-close-overlay>
+                    <div class="popup__content">
+                      <button class="button-close popup__close" type="button">x</button>
+                      <div class="popup__body">
+                        <figure>
+                          <picture>
+                            <img src="./images/placeholders/700width_angled_image.jpg" alt="Post image">
+                          </picture>
+                          
+                          <figcaption>Ілюстраційне фото SKYRANGER R70, скріншот з відео</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              
+              <ul>
+                <li>
+                  Тиждень тому, вихідними, було два прильоти КАБ-500
+                </li>
+
+                <li>
+                  Влучили в центрі міста, фактично житлові райони, про жодну військову інфраструктуру не йдеться, там немає цього і ніколи не було. 
+                </li>
+
+                <li>
+                  Це терор мирного населення, знищення мирного населення, критичної інфраструктури, яка дозволяє цивільному населенню жити, особливо взимку. 
+                </li>
+
+                <li>
+                  Це тероризм.
+                </li>
+              </ul>
+
+              
+              
+            </div>  
+
+
+            <div class="post-tags">
+              <ul class="post-tags__list">
+                <strong>Теги</strong>
+                
+                <li class="post-tags__item">
+                  <a class="post-tags__link" href="#">
+                    Суспільство
+                  </a>
+                </li>
+                <li class="post-tags__item">
+                  <a class="post-tags__link" href="#">
+                      Війна
+                  </a>
+                </li>
+                <li class="post-tags__item">
+                  <a class="post-tags__link" href="#">
+                    Україна
+                  </a>
+                </li>
+                <li class="post-tags__item">
+                  <a class="post-tags__link" href="#">
+                    Суспільство
+                  </a>
+                </li>
+                <li class="post-tags__item">
+                  <a class="post-tags__link" href="#">
+                    Війна
+                  </a>
+                </li>
+                <li class="post-tags__item">
+                  <a class="post-tags__link" href="#">
+                    Україна
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div> 
+        </div> 
+      </section>
+    </main>
+    
+    <footer class="footer">
+
+  <div class="container">
+    <div class="footer__row">
+      <div class="footer__info">
+        <div class="footer__logo-box">
+          <a href="/" class="logo footer__logo" title="Перейти на головну">
+            <img src="./images/logo-footer.svg" alt="Footer Logo">
+          </a>
+        </div>
+
+        <div class="social-links-desktop" data-placeholder="desktop">
+          <h6>Ми у Соцмережах</h6>
+
+          <ul class="social-media-list">
+            <li class="social-media-list__item">
+              <a class="social-media-list__link" href="#" title="Facebook" target="_blank">
+                <span class="icon icon-facebook"></span>
+              </a>
+            </li>
+            <li class="social-media-list__item">
+              <a class="social-media-list__link" href="#" title="twitter" target="_blank">
+                <span class="icon icon-twitter"></span>
+              </a>
+            </li>
+            <li class="social-media-list__item">
+              <a class="social-media-list__link" href="#" title="Telegram" target="_blank">
+                <span class="icon icon-telegram"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="footer__navigation">
+        <ul class="menu__list">
+          <li class="menu__item current-menu-item">
+            <a href="/" class="menu__link" title="Перейти до головної сторінки">
+              Головна
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./news.html" class="menu__link" title="Перейти до розділу Новини">
+              Новини
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./exclusive.html" class="menu__link" title="Перейти до розділу Ексклюзив">
+              Ексклюзив
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./reportages.html" class="menu__link" title="Перейти до розділу Репортажі">
+              Репортажі
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./analytics.html" class="menu__link" title="Перейти до розділу Аналітика">
+              Аналітика
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="./blog.html" class="menu__link" title="Перейти до розділу Блог">
+              Блог
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./investigations.html" class="menu__link" title="Перейти до розділу Розслідування">
+              Розслідування
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./russian-propaganda.html" class="menu__link" title="Перейти до розділу Російська пропаганда">
+              Російська пропаганда
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="./about-us.html" class="menu__link" title="Перейти до сторінки Про нас">
+              Про нас
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__info footer__info--end">
+        <div class="social-links-mobile" data-placeholder="mobile"></div>
+
+        <div>
+          <h6>
+            Розвиваємо проект за підтримки:
+          </h6>
+          <a href="https://www.mediadevelopmentfoundation.org" title="Media Development Foundation" target="_blank">
+            <img src="./images/media-dev-logo.svg" loading="lazy" alt="Media Development Foundation">
+          </a>
+        </div>
+        
+        <div class="creator">
+          <h6>
+            Дизайн та розробка:
+          </h6>
+          <a href="https://ralabs.org" title="Ralabs" target="_blank">
+            <img src="./images/ralabs-logo.svg" loading="lazy" alt="Ralabs Logo">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__rights">
+      <p>
+        &copy;2024, OCCUPIED.UA, Використання матеріалів сайту лише за умови посилання (для інтернет-видань - гіперпосилання) на "OCCUPIED.UA" не нижче третього абзацу.
+        <br>
+        <br>
+        <a class="text-underline" href="#" title="Права та інформація">
+          Права та Інформація, щоб в нас все було добре
+        </a>
+        <br>
+        <br>
+        Усі права захищені.
+      </p>
+    </div>
+
+    <div id="creator-space"></div>
+  </div>
+</footer>
+  </body>
+</html>
